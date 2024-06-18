@@ -1,0 +1,13 @@
+.ft-colaborar {
+    padding: 0.5em;
+}
+.cr-title {
+    text-align: center;
+}
+.cr-div {
+    padding-left: 0.5em;
+
+    .cr-ul {
+        list-style-type: none;
+    }
+}

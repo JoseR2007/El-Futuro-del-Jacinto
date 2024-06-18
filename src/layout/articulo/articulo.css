@@ -1,0 +1,40 @@
+.ups {
+    color: gray;
+    text-align: center;
+    margin: 0.5em;
+}
+.view {
+    display: none;
+}
+.at-allArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.at-article {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: calc(100% - 40%);
+    padding: 0.5em;
+
+    .at-title {
+        font-size: 1.6rem;
+        margin-left: 0.2em;
+    }
+    .at-content {
+        width: 100%;
+        height: 30em;
+        overflow-y: scroll;
+        scrollbar-color: gray transparent;
+        padding: 0.3em;
+    }
+}
+.at-article + .at-article {
+    margin-top: 0.5em;
+}
+
+@media (max-width: 760px) {
+    .at-article {
+        width: calc(100% - 10%);
+    }
+}
