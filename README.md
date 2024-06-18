@@ -1,8 +1,15 @@
-# React + Vite
+# El Futuro Del Jacinto
+Una pagina en donde puedes ver contenido relacionado al liceo jacinto de la concha.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ¿Tienes alguna propuesta?
+Puedes consultar el codigo directamente en el repositorio en la rama 'master', si encuentras algun error o tienes alguna sugerencia puedes hacer una request.
 
-Currently, two official plugins are available:
+### Informacion tecnica
+La pagina esta hecha con React.js, una libreria de JavaScript desarrollada por Meta. Ademas, el proyecto fue iniciado con Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto es puede ser usado gracias a Github Pages un servicio de alojamiento gratuito de Github, que permite que podamos subir nuestro proyectos a la web. Como linter utilize SemiStandard, un linter que a diferencia de Standard funcion en base a semi colons. 
+
+> [!IMPORTANT]
+Dependencias utilizadas:
+-React
+-React Router Dom
