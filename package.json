@@ -30,5 +30,6 @@
   },
   "eslintConfig": {
     "extends": "semistandard"
-  }
+  },
+  "homepage": "http://JoseR2007.github.io/El-Futuro-del-Jacinto"
 }

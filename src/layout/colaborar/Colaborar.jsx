@@ -15,6 +15,7 @@ export default function Colaborar () {
         </ul>
         <br />
         <p>Puedes colaborar en el desarrollo de la pagina ahora como en el mantenimiento a futuro.</p>
+        <p>Si quieres consultar el codigo de la pagina e implementar alguna mejora puede hacer <a href='https://github.com/JoseR2007/El-Futuro-del-Jacinto/tree/master'>Click aqui</a> y hacer una pull request</p>
       </div>
     </section>
   );

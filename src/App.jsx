@@ -36,14 +36,14 @@ export default function App () {
   };
 
   return (
-    <div>
+    <>
       <header>
         <div className='container-img'>
           <img src={logo} className='logo' alt='logo' />
         </div>
         <h1 className='title'>El Futuro del Jacinto</h1>
-        <button type='button' className='menu-desplegable'>
-          <span className='material-symbols-outlined' onClick={() => { setMostrarMenu(!mostrarMenu); }}>menu</span>
+        <button className='menu-desplegable' onClick={() => { setMostrarMenu(!mostrarMenu); }}>
+          <span className='material-symbols-outlined'>menu</span>
         </button>
       </header>
       <MenuMobile clasMenu={mostrarMenu ? 'menu_mobile' : 'menu_mobile view'} />
@@ -62,8 +62,8 @@ export default function App () {
         <Route path='/proyectos' element={<Proyectos />} />
         <Route path='/actividades' element={<Actividades />} />
         <Route path='/colaborar' element={<Colaborar />} />
-        <Route path='*' element={<h1 style={{ textAlign: 'center' }}>Not Found</h1>} />
+        <Route path='*' element={<h1 style={{ textAlign: 'center' }}>404: Not Found</h1>} />
       </Routes>
-    </div>
+    </>
   );
 }
