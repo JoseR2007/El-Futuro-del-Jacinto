@@ -1,8 +1,7 @@
 
 export default function Proyectos () {
-
-    return (
-        <>
-        </>
-    )
+  return (
+    <>
+    </>
+  );
 }
