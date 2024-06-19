@@ -5,7 +5,7 @@ import Actividades from './layout/actividades/Actividades';
 import Proyectos from './components/Proyectos';
 import Articulos from './layout/articulo/Articulos';
 import Eventos from './layout/eventos/Eventos';
-import Colaborar from './layout/colaraborar/Colaborar';
+import Colaborar from './layout/colaborar/Colaborar';
 
 import NavLink from './components/NavLink';
 import logo from './assets/logo.png';
