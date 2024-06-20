@@ -59,23 +59,12 @@ header {
     height: 100%;
     padding: 0.5em 0 0 0;
     animation: out 0.25s forwards;
-
-    div {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-}
-
-.view {
-    display: none;
 }
 
 .btns-menu-desplegable {
     width: 100%;
     padding: 0.3em;
     text-decoration: none;
-    text-align: center;
     color: #222;
 }
 

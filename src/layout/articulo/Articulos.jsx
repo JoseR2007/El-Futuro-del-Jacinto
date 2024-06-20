@@ -1,5 +1,5 @@
 import './articulo.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Articulo = ({ children, title, user, fecha }) => {
   return (
@@ -17,23 +17,10 @@ const Articulo = ({ children, title, user, fecha }) => {
 
 export default function Articulos () {
   const [articulos, setArticulos] = useState([]);
-  const [classUps, setClassUps] = useState('ups view');
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (articulos.length === 0) {
-        setClassUps('ups');
-      } else {
-        setClassUps('ups view');
-      }
-    }, 1000);
-  }, [articulos]);
 
   return (
     <section>
-      <div className={classUps}>
-        <h2>¡Aun no hay nada para mostrar!</h2>
-      </div>
+      {articulos.length === 0 && <div className='notContent'> <b>Aun no hay nada para mostrar</b> </div>}
 
       <section className='at-allArticle' />
     </section>
