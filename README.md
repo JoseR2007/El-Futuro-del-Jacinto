@@ -2,7 +2,7 @@
 Una pagina en donde puedes ver contenido relacionado al liceo jacinto de la concha.
 
 ## ¿Tienes alguna propuesta?
-Puedes consultar el codigo directamente en el repositorio en la rama 'master', si encuentras algun error o tienes alguna sugerencia puedes hacer una request.
+Puedes consultar el codigo directamente en el repositorio en la rama 'master', si encuentras algun error o tienes alguna sugerencia puedes hacer una issues.
 
 ### Informacion tecnica
 La pagina esta hecha con React.js, una libreria de JavaScript desarrollada por Meta. Ademas, el proyecto fue iniciado con Vite.
