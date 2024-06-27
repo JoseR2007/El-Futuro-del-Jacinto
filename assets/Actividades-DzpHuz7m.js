@@ -1,0 +1,1 @@
+import{r as a,j as t}from"./index-DCKyvSAF.js";function r(){const[s,e]=a.useState([]);return t.jsx("section",{children:s.length===0&&t.jsxs("div",{className:"notContent",children:[" ",t.jsx("b",{children:"Aun no hay nada para mostrar"})," "]})})}export{r as default};
