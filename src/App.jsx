@@ -1,4 +1,4 @@
-import { Outlet, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useState, lazy, Suspense } from 'react';
 
 import NavLink from './components/NavLink';
