@@ -1,16 +1,16 @@
-import { Route, Routes } from 'react-router-dom';
-import { useState } from 'react';
-
-import Actividades from './layout/actividades/Actividades';
-import Proyectos from './layout/proyectos/Proyectos';
-import Articulos from './layout/articulo/Articulos';
-import Eventos from './layout/eventos/Eventos';
-import Colaborar from './layout/colaborar/Colaborar';
-import MenuMobile from './layout/menuMobile/MenuMobile';
+import { Outlet, Route, Routes } from 'react-router-dom';
+import { useState, lazy, Suspense } from 'react';
 
 import NavLink from './components/NavLink';
 import logo from './assets/logo.png';
 import './app.css';
+
+const Actividades = lazy(() => import('./layout/actividades/Actividades'));
+const Proyectos = lazy(() => import('./layout/proyectos/Proyectos'));
+const Articulos = lazy(() => import('./layout/articulo/Articulos'));
+const Eventos = lazy(() => import('./layout/eventos/Eventos'));
+const Colaborar = lazy(() => import('./layout/colaborar/Colaborar'));
+const MenuMobile = lazy(() => import('./layout/menuMobile/MenuMobile'));
 
 export default function App () {
   const [mostrarMenu, setMostrarMenu] = useState(false);
@@ -42,6 +42,9 @@ export default function App () {
           <li> <NavLink to='/colaborar' clase='btns-menu' onClick={cerrarMenu}><span className='material-symbols-outlined'>person_add</span></NavLink> </li>
         </ul>
       </nav>
+      <Suspense fallback={<b style={{ textAlign: 'center', padding: '0.5em' }}>Loading...</b>}>
+        <Outlet />
+      </Suspense>
       <Routes>
         <Route path='/' element={<Articulos />} />
         <Route path='/eventos' element={<Eventos />} />
