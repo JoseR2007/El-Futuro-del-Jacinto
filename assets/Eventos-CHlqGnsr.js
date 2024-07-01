@@ -1,1 +1,0 @@
-import{r as e,j as t}from"./index-Bj-ZCWLp.js";function o(){const[s,n]=e.useState([]);return t.jsx("section",{className:"et-section",children:s.length===0&&t.jsxs("div",{className:"notContent",children:[" ",t.jsx("b",{children:"Aun no hay nada para mostrar"})," "]})})}export{o as default};
