@@ -1,8 +1,9 @@
 {
-  "name": "futuro-jacinto",
+  "name": "El-Futuro-del-Jacinto",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http://JoseR2007.github.io/El-Futuro-del-Jacinto",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -30,6 +31,5 @@
   },
   "eslintConfig": {
     "extends": "semistandard"
-  },
-  "homepage": "http://JoseR2007.github.io/El-Futuro-del-Jacinto"
+  }
 }
