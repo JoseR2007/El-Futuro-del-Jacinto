@@ -1,10 +1,10 @@
-import { Outlet, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useState, lazy, Suspense } from 'react';
 
+import MenuMobile from './layout/menuMobile/MenuMobile';
 import NavLink from './components/NavLink';
 import logo from './assets/logo.png';
 import './app.css';
-import MenuMobile from './layout/menuMobile/MenuMobile';
 
 const Actividades = lazy(() => import('./layout/actividades/Actividades'));
 const Proyectos = lazy(() => import('./layout/proyectos/Proyectos'));
@@ -43,9 +43,7 @@ export default function App () {
         </ul>
       </nav>
       <Suspense fallback={<b style={{ textAlign: 'center', padding: '0.5em' }}>Loading...</b>}>
-        <Outlet />
-      </Suspense>
-      <Routes>
+        <Routes>
           <Route path='/' element={<Articulos />} />
           <Route path='/eventos' element={<Eventos />} />
           <Route path='/proyectos' element={<Proyectos />} />
@@ -53,6 +51,7 @@ export default function App () {
           <Route path='/colaborar' element={<Colaborar />} />
           <Route path='*' element={<h1 style={{ textAlign: 'center' }}>404: Not Found</h1>} />
         </Routes>
+      </Suspense>
     </>
   );
 }
