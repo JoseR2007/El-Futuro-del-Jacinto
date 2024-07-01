@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Outlet, Route, Routes } from 'react-router-dom';
 import { useState, lazy, Suspense } from 'react';
 
 import NavLink from './components/NavLink';
@@ -43,7 +43,9 @@ export default function App () {
         </ul>
       </nav>
       <Suspense fallback={<b style={{ textAlign: 'center', padding: '0.5em' }}>Loading...</b>}>
-        <Routes>
+        <Outlet />
+      </Suspense>
+      <Routes>
           <Route path='/' element={<Articulos />} />
           <Route path='/eventos' element={<Eventos />} />
           <Route path='/proyectos' element={<Proyectos />} />
@@ -51,7 +53,6 @@ export default function App () {
           <Route path='/colaborar' element={<Colaborar />} />
           <Route path='*' element={<h1 style={{ textAlign: 'center' }}>404: Not Found</h1>} />
         </Routes>
-      </Suspense>
     </>
   );
 }
