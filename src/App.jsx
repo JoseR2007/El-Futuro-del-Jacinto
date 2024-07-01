@@ -4,13 +4,13 @@ import { useState, lazy, Suspense } from 'react';
 import NavLink from './components/NavLink';
 import logo from './assets/logo.png';
 import './app.css';
+import MenuMobile from './layout/menuMobile/MenuMobile';
 
 const Actividades = lazy(() => import('./layout/actividades/Actividades'));
 const Proyectos = lazy(() => import('./layout/proyectos/Proyectos'));
 const Articulos = lazy(() => import('./layout/articulo/Articulos'));
 const Eventos = lazy(() => import('./layout/eventos/Eventos'));
 const Colaborar = lazy(() => import('./layout/colaborar/Colaborar'));
-const MenuMobile = lazy(() => import('./layout/menuMobile/MenuMobile'));
 
 export default function App () {
   const [mostrarMenu, setMostrarMenu] = useState(false);
