@@ -1,1 +1,0 @@
-import{r as e,j as s}from"./index-OdJ__AY-.js";function n(){const[t,o]=e.useState([]);return s.jsxs("section",{children:[t.length===0&&s.jsxs("div",{className:"notContent",children:[" ",s.jsx("b",{children:"Aun no hay nada para mostrar"})," "]}),s.jsx("div",{className:"containerProjects"})]})}export{n as default};
